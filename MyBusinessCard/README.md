@@ -4,7 +4,7 @@
 -핵심기능: 명함 색상 변경, 명함 사진 변경, URL 링크
 
 ## 📸 실행 화면
-<img width="758" height="447" alt="MyBusinessCard_실행이미지" src="https://github.com/user-attachments/assets/a7c4378e-23c8-43c9-9489-0606136e00c4" />
+<img width="762" height="452" alt="MyBusinessCard_실행이미지" src="https://github.com/user-attachments/assets/8b95d88d-54e1-4c03-be4c-22cbfcb54988" />
 
 
 ## 💡 구현 시 어려웠던 점
