@@ -76,7 +76,7 @@
             // pictureBoxProfile
             // 
             pictureBoxProfile.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxProfile.Location = new Point(20, 37);
+            pictureBoxProfile.Location = new Point(28, 37);
             pictureBoxProfile.Name = "pictureBoxProfile";
             pictureBoxProfile.Size = new Size(140, 184);
             pictureBoxProfile.SizeMode = PictureBoxSizeMode.Zoom;
@@ -125,18 +125,16 @@
             // 
             // linkLabelGithub
             // 
-            this.linkLabelGithub.AutoSize = true;
-            this.linkLabelGithub.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.linkLabelGithub.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabelGithub.Location = new System.Drawing.Point(207, 233);
-            this.linkLabelGithub.Name = "linkLabelGithub";
-            this.linkLabelGithub.Size = new System.Drawing.Size(90, 19);
-            this.linkLabelGithub.TabIndex = 5;
-            this.linkLabelGithub.TabStop = true;
-            this.linkLabelGithub.Text = "GitHub";
-            this.linkLabelGithub.Visible = true;
-            this.linkLabelGithub.BringToFront();
-            this.linkLabelGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGithub_LinkClicked);
+            linkLabelGithub.AutoSize = true;
+            linkLabelGithub.Font = new Font("Segoe UI", 10F);
+            linkLabelGithub.LinkColor = Color.Blue;
+            linkLabelGithub.Location = new Point(207, 233);
+            linkLabelGithub.Name = "linkLabelGithub";
+            linkLabelGithub.Size = new Size(53, 19);
+            linkLabelGithub.TabIndex = 5;
+            linkLabelGithub.TabStop = true;
+            linkLabelGithub.Text = "GitHub";
+            linkLabelGithub.LinkClicked += linkLabelGithub_LinkClicked;
             // 
             // btnChangeBackColor
             // 
