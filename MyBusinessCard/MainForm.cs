@@ -58,6 +58,7 @@ namespace MyBusinessCard
             }
         }
 
+        //GitHub URL 링크 열기
         private void linkLabelGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             string url = "https://github.com/joseph0103-hub";
