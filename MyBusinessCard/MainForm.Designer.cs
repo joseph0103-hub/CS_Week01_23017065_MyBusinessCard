@@ -18,14 +18,15 @@
         private void InitializeComponent()
         {
             panelCard = new Panel();
+            btnChangePicture = new Button();
             panelInfoBox = new Panel();
             pictureBoxProfile = new PictureBox();
             lblName = new Label();
             lblTitle = new Label();
             lblContact = new Label();
             lblAddress = new Label();
+            linkLabelGithub = new LinkLabel();
             btnChangeBackColor = new Button();
-            btnChangePicture = new Button();
             panelCard.SuspendLayout();
             panelInfoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProfile).BeginInit();
@@ -45,6 +46,18 @@
             panelCard.Size = new Size(760, 420);
             panelCard.TabIndex = 0;
             // 
+            // btnChangePicture
+            // 
+            btnChangePicture.Font = new Font("맑은 고딕", 10F);
+            btnChangePicture.ForeColor = Color.RoyalBlue;
+            btnChangePicture.Location = new Point(585, 351);
+            btnChangePicture.Name = "btnChangePicture";
+            btnChangePicture.Size = new Size(130, 30);
+            btnChangePicture.TabIndex = 7;
+            btnChangePicture.Text = "사진 바꾸기";
+            btnChangePicture.UseVisualStyleBackColor = true;
+            btnChangePicture.Click += btnChangePicture_Click;
+            // 
             // panelInfoBox
             // 
             panelInfoBox.BackColor = Color.Orange;
@@ -54,6 +67,7 @@
             panelInfoBox.Controls.Add(lblTitle);
             panelInfoBox.Controls.Add(lblContact);
             panelInfoBox.Controls.Add(lblAddress);
+            panelInfoBox.Controls.Add(linkLabelGithub);
             panelInfoBox.Location = new Point(38, 32);
             panelInfoBox.Name = "panelInfoBox";
             panelInfoBox.Size = new Size(480, 278);
@@ -62,9 +76,9 @@
             // pictureBoxProfile
             // 
             pictureBoxProfile.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxProfile.Location = new Point(20, 36);
+            pictureBoxProfile.Location = new Point(20, 37);
             pictureBoxProfile.Name = "pictureBoxProfile";
-            pictureBoxProfile.Size = new Size(140, 170);
+            pictureBoxProfile.Size = new Size(140, 184);
             pictureBoxProfile.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxProfile.TabIndex = 0;
             pictureBoxProfile.TabStop = false;
@@ -82,7 +96,7 @@
             // lblTitle
             // 
             lblTitle.Font = new Font("맑은 고딕", 12.5F);
-            lblTitle.Location = new Point(205, 78);
+            lblTitle.Location = new Point(205, 76);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(245, 56);
             lblTitle.TabIndex = 2;
@@ -92,7 +106,7 @@
             // lblContact
             // 
             lblContact.Font = new Font("맑은 고딕", 11.5F);
-            lblContact.Location = new Point(205, 142);
+            lblContact.Location = new Point(205, 137);
             lblContact.Name = "lblContact";
             lblContact.Size = new Size(245, 52);
             lblContact.TabIndex = 3;
@@ -102,12 +116,27 @@
             // lblAddress
             // 
             lblAddress.Font = new Font("맑은 고딕", 11.5F);
-            lblAddress.Location = new Point(205, 206);
+            lblAddress.Location = new Point(205, 194);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(245, 34);
+            lblAddress.Size = new Size(245, 33);
             lblAddress.TabIndex = 4;
             lblAddress.Text = "경기도 수원시 장안구 광교산로";
             lblAddress.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // linkLabelGithub
+            // 
+            this.linkLabelGithub.AutoSize = true;
+            this.linkLabelGithub.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.linkLabelGithub.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabelGithub.Location = new System.Drawing.Point(207, 233);
+            this.linkLabelGithub.Name = "linkLabelGithub";
+            this.linkLabelGithub.Size = new System.Drawing.Size(90, 19);
+            this.linkLabelGithub.TabIndex = 5;
+            this.linkLabelGithub.TabStop = true;
+            this.linkLabelGithub.Text = "GitHub";
+            this.linkLabelGithub.Visible = true;
+            this.linkLabelGithub.BringToFront();
+            this.linkLabelGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGithub_LinkClicked);
             // 
             // btnChangeBackColor
             // 
@@ -120,18 +149,6 @@
             btnChangeBackColor.Text = "배경색 바꾸기";
             btnChangeBackColor.UseVisualStyleBackColor = true;
             btnChangeBackColor.Click += btnChangeBackColor_Click;
-            // 
-            // btnChangePicture
-            // 
-            btnChangePicture.Font = new Font("맑은 고딕", 10F);
-            btnChangePicture.ForeColor = Color.RoyalBlue;
-            btnChangePicture.Location = new Point(585, 351);
-            btnChangePicture.Name = "btnChangePicture";
-            btnChangePicture.Size = new Size(130, 30);
-            btnChangePicture.TabIndex = 7;
-            btnChangePicture.Text = "사진 바꾸기";
-            btnChangePicture.UseVisualStyleBackColor = true;
-            btnChangePicture.Click += btnChangePicture_Click;
             // 
             // MainForm
             // 
@@ -147,6 +164,7 @@
             Text = "나만의 디지털 명함";
             panelCard.ResumeLayout(false);
             panelInfoBox.ResumeLayout(false);
+            panelInfoBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProfile).EndInit();
             ResumeLayout(false);
         }
@@ -162,6 +180,6 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Button btnChangeBackColor;
         private System.Windows.Forms.Button btnChangePicture;
-        private Button button1;
+        private System.Windows.Forms.LinkLabel linkLabelGithub;
     }
 }

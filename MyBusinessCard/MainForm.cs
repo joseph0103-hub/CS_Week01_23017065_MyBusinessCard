@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace MyBusinessCard
 {
@@ -54,6 +55,26 @@ namespace MyBusinessCard
                             MessageBoxIcon.Error);
                     }
                 }
+            }
+        }
+
+        private void linkLabelGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = "https://github.com/joseph0103-hub";
+
+            try
+            {
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                };
+
+                Process.Start(psi);
+            }
+            catch
+            {
+                MessageBox.Show("GitHub 페이지를 열 수 없습니다.");
             }
         }
     }
