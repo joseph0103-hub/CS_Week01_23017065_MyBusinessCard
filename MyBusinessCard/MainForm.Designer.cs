@@ -74,7 +74,7 @@ namespace MyBusinessCard
             panelInfoBox.Controls.Add(linkLabelGithub);
             panelInfoBox.Location = new Point(38, 32);
             panelInfoBox.Name = "panelInfoBox";
-            panelInfoBox.Size = new Size(481, 258);
+            panelInfoBox.Size = new Size(477, 258);
             panelInfoBox.TabIndex = 6;
             // 
             // pictureBoxProfile
