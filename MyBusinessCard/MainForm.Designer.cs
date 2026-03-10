@@ -1,4 +1,6 @@
-﻿namespace MyBusinessCard
+﻿using static System.Net.WebRequestMethods;
+
+namespace MyBusinessCard
 {
     partial class MainForm
     {
@@ -23,8 +25,9 @@
             pictureBoxProfile = new PictureBox();
             lblName = new Label();
             lblTitle = new Label();
+            lblEmailTitle = new Label();
             lblContact = new Label();
-            lblAddress = new Label();
+            lblSnsTitle = new Label();
             linkLabelGithub = new LinkLabel();
             btnChangeBackColor = new Button();
             panelCard.SuspendLayout();
@@ -65,28 +68,28 @@
             panelInfoBox.Controls.Add(pictureBoxProfile);
             panelInfoBox.Controls.Add(lblName);
             panelInfoBox.Controls.Add(lblTitle);
+            panelInfoBox.Controls.Add(lblEmailTitle);
             panelInfoBox.Controls.Add(lblContact);
-            panelInfoBox.Controls.Add(lblAddress);
+            panelInfoBox.Controls.Add(lblSnsTitle);
             panelInfoBox.Controls.Add(linkLabelGithub);
             panelInfoBox.Location = new Point(38, 32);
             panelInfoBox.Name = "panelInfoBox";
-            panelInfoBox.Size = new Size(480, 278);
+            panelInfoBox.Size = new Size(481, 258);
             panelInfoBox.TabIndex = 6;
             // 
             // pictureBoxProfile
             // 
-            pictureBoxProfile.BorderStyle = BorderStyle.None;
             pictureBoxProfile.Location = new Point(28, 37);
             pictureBoxProfile.Name = "pictureBoxProfile";
             pictureBoxProfile.Size = new Size(140, 184);
-            pictureBoxProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxProfile.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxProfile.TabIndex = 0;
             pictureBoxProfile.TabStop = false;
             // 
             // lblName
             // 
-            lblName.Font = new Font("맑은 고딕", 22F, FontStyle.Bold);
-            lblName.Location = new Point(205, 20);
+            lblName.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            lblName.Location = new Point(208, 34);
             lblName.Name = "lblName";
             lblName.Size = new Size(220, 45);
             lblName.TabIndex = 1;
@@ -95,45 +98,55 @@
             // 
             // lblTitle
             // 
-            lblTitle.Font = new Font("맑은 고딕", 12.5F);
-            lblTitle.Location = new Point(205, 76);
+            lblTitle.Font = new Font("Segoe UI", 12.5F);
+            lblTitle.Location = new Point(205, 88);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(245, 56);
             lblTitle.TabIndex = 2;
-            lblTitle.Text = "수원대학교 지능형SW융합대학\r\n컴퓨터학부 2학년 학생";
+            lblTitle.Text = "수원대학교 지능형SW융합대학\r\n컴퓨터학부";
             lblTitle.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblEmailTitle
+            // 
+            lblEmailTitle.Font = new Font("맑은 고딕", 11.5F);
+            lblEmailTitle.Location = new Point(189, 146);
+            lblEmailTitle.Name = "lblEmailTitle";
+            lblEmailTitle.Size = new Size(66, 38);
+            lblEmailTitle.TabIndex = 5;
+            lblEmailTitle.Text = "Email";
+            lblEmailTitle.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lblContact
             // 
-            lblContact.Font = new Font("맑은 고딕", 11.5F);
-            lblContact.Location = new Point(205, 137);
+            lblContact.Font = new Font("Segoe UI", 11.5F);
+            lblContact.Location = new Point(264, 146);
             lblContact.Name = "lblContact";
-            lblContact.Size = new Size(245, 52);
+            lblContact.Size = new Size(188, 38);
             lblContact.TabIndex = 3;
-            lblContact.Text = "010-9498-5102\r\n23017065@suwon.ac.kr";
+            lblContact.Text = "23017065@suwon.ac.kr";
             lblContact.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // lblAddress
+            // lblSnsTitle
             // 
-            lblAddress.Font = new Font("맑은 고딕", 11.5F);
-            lblAddress.Location = new Point(205, 194);
-            lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(245, 33);
-            lblAddress.TabIndex = 4;
-            lblAddress.Text = "경기도 수원시 장안구 광교산로";
-            lblAddress.TextAlign = ContentAlignment.MiddleLeft;
+            lblSnsTitle.Font = new Font("Segoe UI", 10F);
+            lblSnsTitle.Location = new Point(203, 187);
+            lblSnsTitle.Name = "lblSnsTitle";
+            lblSnsTitle.Size = new Size(56, 23);
+            lblSnsTitle.TabIndex = 6;
+            lblSnsTitle.Text = "GitHub";
+            lblSnsTitle.TextAlign = ContentAlignment.MiddleRight;
             // 
             // linkLabelGithub
             // 
             linkLabelGithub.AutoSize = true;
             linkLabelGithub.Font = new Font("Segoe UI", 10F);
             linkLabelGithub.LinkColor = Color.Blue;
-            linkLabelGithub.Location = new Point(207, 233);
+            linkLabelGithub.Location = new Point(267, 189);
             linkLabelGithub.Name = "linkLabelGithub";
-            linkLabelGithub.Size = new Size(53, 19);
+            linkLabelGithub.Size = new Size(185, 19);
             linkLabelGithub.TabIndex = 5;
             linkLabelGithub.TabStop = true;
-            linkLabelGithub.Text = "GitHub";
+            linkLabelGithub.Text = "github.com/joseph0103-hub";
             linkLabelGithub.LinkClicked += linkLabelGithub_LinkClicked;
             // 
             // btnChangeBackColor
@@ -174,10 +187,11 @@
         private System.Windows.Forms.PictureBox pictureBoxProfile;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblEmailTitle;
         private System.Windows.Forms.Label lblContact;
-        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Button btnChangeBackColor;
         private System.Windows.Forms.Button btnChangePicture;
+        private System.Windows.Forms.Label lblSnsTitle;
         private System.Windows.Forms.LinkLabel linkLabelGithub;
     }
 }
