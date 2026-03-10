@@ -129,7 +129,7 @@ namespace MyBusinessCard
             // lblSnsTitle
             // 
             lblSnsTitle.Font = new Font("Segoe UI", 10F);
-            lblSnsTitle.Location = new Point(203, 187);
+            lblSnsTitle.Location = new Point(203, 189);
             lblSnsTitle.Name = "lblSnsTitle";
             lblSnsTitle.Size = new Size(56, 23);
             lblSnsTitle.TabIndex = 6;
