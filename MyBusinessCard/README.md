@@ -4,7 +4,7 @@
 -핵심기능: 명함 색상 변경, 명함 사진 변경, URL 링크
 
 ## 📸 실행 화면
-<img width="765" height="455" alt="MyBusinessCard_실행이미지" src="https://github.com/user-attachments/assets/e48670e8-6875-44cd-b52b-62b5aa931250" />
+<img width="765" height="452" alt="MyBusinessCard_실행이미지" src="https://github.com/user-attachments/assets/fb6f25cf-b27d-4ca1-a94b-c87383e3713f" />
 
 ## 💡 구현 시 어려웠던 점
 - UI 배치가 Designer.cs에 의존하고 있어 컨트롤 배치 수정 작업이 쉽지 않았습니다.
