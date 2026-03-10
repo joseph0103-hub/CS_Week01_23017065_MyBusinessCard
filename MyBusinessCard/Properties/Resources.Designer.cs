@@ -23,7 +23,8 @@ namespace MyBusinessCard.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+        //internal static Image leeyoseob2;
+        //internal static Image leeyoseob3;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -66,6 +67,24 @@ namespace MyBusinessCard.Properties {
         internal static System.Drawing.Bitmap leeyoseob {
             get {
                 object obj = ResourceManager.GetObject("leeyoseob", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap leeyoseob2
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("leeyoseob2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap leeyoseob3
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("leeyoseob3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

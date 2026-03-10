@@ -75,7 +75,7 @@
             // 
             // pictureBoxProfile
             // 
-            pictureBoxProfile.BorderStyle = BorderStyle.FixedSingle;
+            pictureBoxProfile.BorderStyle = BorderStyle.None;
             pictureBoxProfile.Location = new Point(28, 37);
             pictureBoxProfile.Name = "pictureBoxProfile";
             pictureBoxProfile.Size = new Size(140, 184);
